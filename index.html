@@ -1,15 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>homepage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Herb Garden Homepage</title>
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/home.js" defer></script>
 </head>
-
 <body>
- hello
-  <script src="script.js"></script>
+
+    <section id="hero" class="hero-section">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h3>Welcome to the Herb Garden</h3>
+            <button class="visit-btn">Visit Garden</button>
+        </div>
+    </section>
+
+
+    <section id="tab-section" class="tab-section">
+        <div class="tabs">
+            <button class="tab-link active" data-tab="plants">Plants</button>
+            <button class="tab-link" data-tab="articles">Articles</button>
+            <button class="tab-link" data-tab="sellers">Sellers</button>
+        </div>
+
+        <div id="plants" class="tab-content active">
+            <input type="text" id="plant-search" placeholder="Search for plants...">
+            <div class="plant-grid">
+              <div class="plant-card">Aamlki</div>
+              <div class="plant-card">Brahmi</div>
+              <div class="plant-card">Aloe Vera</div>
+              <div class="plant-card">plant</div>
+              <div class="plant-card">plant</div>
+              <div class="plant-card">plant</div>
+              <div class="plant-card">plant</div>
+              <div class="plant-card">plant</div>
+              <div class="plant-card">plant</div>
+              <!-- Add more plants here -->
+          </div>          
+        </div>
+
+        <div id="articles" class="tab-content">
+            <div class="article-list">
+                <article>
+                    <h3>Cultivation Techniques</h3>
+                </article>
+                <article>
+                    <h3>Success Stories</h3>
+                </article>
+            </div>
+        </div>
+
+        <div id="sellers" class="tab-content">
+          <div class="seller-list">
+            <div class="seller-card">
+                <div>Herb Seller 1</div>
+                <div>Details, Contact Info, etc.</div>
+            </div>
+            <div class="seller-card">
+                <div>Herb Seller 2</div>
+                <div>Details, Contact Info, etc.</div>
+            </div>
+            <div class="seller-card">
+                <div>Herb Seller 3</div>
+                <div>Details, Contact Info, etc.</div>
+            </div>
+        </div>
+        
+        </div>
+    </section>
+
 </body>
 </html>

@@ -1,0 +1,190 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1b3b1f;
+    color: #e0e9e0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('../images/garden.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    color: #a8dba8;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.visit-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.visit-btn:hover {
+    background-color: #3e8e41;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Tab Section */
+.tab-section {
+    padding: 50px;
+    background-color: #2b472c;
+    border-top: 5px solid #3e5d40;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.tab-link {
+    padding: 15px 40px;
+    background-color: #466d44;
+    border: 2px solid #6ea96e;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #e0e9e0;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tab-link.active {
+    background-color: #6ea96e;
+    color: white;
+    transform: translateY(-5px);
+}
+
+.tab-link:hover {
+    background-color: #59795c;
+    transform: translateY(-3px);
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+    color: #e0e9e0;
+}
+
+/* Search Bar */
+#plant-search {
+    width: 80%;
+    padding: 15px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #e0e9e0;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+#plant-search::placeholder {
+    color: #e0e9e0;
+}
+
+#plant-search:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Herb Grid */
+.plant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 30px;
+}
+
+.plant-card {
+    padding: 20px;
+    background-color: #3e5d40;
+    border: 2px solid #6ea96e;
+    text-align: center;
+    color: #e0e9e0;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.plant-card:hover {
+    background-color: #59795c;
+    transform: scale(1.05);
+}
+
+/* Article List */
+.article-list {
+    padding: 20px;
+}
+
+.article {
+    background-color: #3e5d40;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #6ea96e;
+    color: #e0e9e0;
+    border-radius: 5px;
+}
+
+/* Sellers List */
+.seller-list {
+    display: block;
+    padding: 30px;
+}
+
+.seller-card {
+    padding: 20px;
+    background-color: #3e5d40;
+    border: 2px solid #6ea96e;
+    text-align: left;
+    color: #e0e9e0;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seller-card:hover {
+    background-color: #59795c;
+}
